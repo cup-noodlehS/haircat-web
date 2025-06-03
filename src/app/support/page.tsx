@@ -38,7 +38,7 @@ export default function SupportPage() {
               <Mail className="text-blue-600 w-5 h-5" />
               <div>
                 <p className="font-medium">Email</p>
-                <p className="text-gray-600">support@haircat.com</p>
+                <p className="text-gray-600">admin@haircat.com</p>
               </div>
             </div>
             <div className="flex items-center space-x-3">
