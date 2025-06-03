@@ -33,14 +33,18 @@ export default function Home() {
         </div>
 
         {/* Coming Soon Message */}
-        <div className="bg-gray-50 rounded-2xl p-8 shadow-xl border-2 border-[#FEBF00]">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-            Coming Soon
-          </h2>
-          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            We&apos;re crafting the perfect mobile experience for your hair care needs. 
-            Get ready to discover your ideal hairstyle and book appointments with top stylists, all powered by AI!
-          </p>
+        
+
+        {/* App Store Button */}
+        <div className="flex justify-center mt-8">
+          <Image
+            src="/images/appstore.webp"
+            alt="Available on the App Store"
+            width={250}
+            height={80}
+            className="cursor-pointer select-none"
+            priority
+          />
         </div>
 
         {/* Features Preview */}
