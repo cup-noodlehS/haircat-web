@@ -37,7 +37,7 @@ export default function Home() {
         {/* App Store Button */}
         <div className="flex flex-wrap justify-center gap-6 mt-8">
           <a 
-            href="https://apps.apple.com/app/haircat" 
+            href="https://testflight.apple.com/join/EQ23AHsB" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transform hover:scale-105 transition-transform duration-200"
