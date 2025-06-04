@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         {/* App Store Button */}
-        <div className="flex justify-center gap-6 mt-8">
+        <div className="flex flex-wrap justify-center gap-6 mt-8">
           <a 
             href="https://apps.apple.com/app/haircat" 
             target="_blank" 
@@ -52,12 +52,12 @@ export default function Home() {
             />
           </a>
           <a 
-            href="https://bg-app-images.s3.us-east-1.amazonaws.com/app-images/feedback/haircat"
+            href="https://bg-app-images.s3.us-east-1.amazonaws.com/app-images/feedback/haircat.apk"
             target="_blank"
             rel="noopener noreferrer"
             className="transform hover:scale-105 transition-transform duration-200"
           >
-            <div className="bg-black rounded-md px-6 py-3 flex items-center gap-3 shadow-lg border-2 border-gray-800">
+            <div className="bg-black rounded-md px-6 py-2 flex items-center gap-3 shadow-lg border-2 border-gray-800">
               <Image
                 src="/images/android-logo.png"
                 alt="Android Logo"
@@ -67,7 +67,7 @@ export default function Home() {
               />
               <div className="text-left">
                 <div className="text-xs text-gray-400">GET IT ON</div>
-                <div className="text-white font-semibold">Android</div>
+                <div className="text-white text-4xl">Android</div>
               </div>
             </div>
           </a>
