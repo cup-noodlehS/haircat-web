@@ -39,6 +39,7 @@ export default function PrivacyPolicyPage() {
                 <li>Payment information (processed securely through our payment providers)</li>
                 <li>Booking history and appointment details</li>
                 <li>Device information and usage data</li>
+                <li>Face data (collected with explicit consent for virtual try-on features)</li>
               </ul>
 
               <h3 className="text-xl font-medium mb-2">2.2 Automatically Collected Information</h3>
@@ -48,6 +49,52 @@ export default function PrivacyPolicyPage() {
                 <li>Operating system</li>
                 <li>App usage statistics and crash reports</li>
                 <li>Location data (with your consent)</li>
+              </ul>
+
+              <h3 className="text-xl font-medium mb-2">2.3 Face Data Collection and Usage</h3>
+              <p className="text-gray-700 mb-4">
+                HairCat collects and processes face data to provide virtual try-on features for hairstyles and hair colors. This data is considered sensitive personal information and is handled with the utmost care and security.
+              </p>
+              
+              <h4 className="text-xl font-medium mb-2">What We Collect</h4>
+              <ul className="list-disc pl-6 mb-4 text-gray-700">
+                <li>Facial features and structure for virtual try-on purposes</li>
+                <li>Basic facial measurements for accurate hair placement</li>
+                <li>No biometric data is stored or processed for identification purposes</li>
+              </ul>
+
+              <h4 className="text-xl font-medium mb-2">How We Use Face Data</h4>
+              <ul className="list-disc pl-6 mb-4 text-gray-700">
+                <li>To provide virtual try-on features for hairstyles and hair colors</li>
+                <li>To improve the accuracy of virtual hair placement</li>
+                <li>To enhance user experience with personalized recommendations</li>
+                <li>To develop and improve our virtual try-on technology</li>
+              </ul>
+
+              <h4 className="text-xl font-medium mb-2">Data Storage and Retention</h4>
+              <ul className="list-disc pl-6 mb-4 text-gray-700">
+                <li>Face data is stored securely on our servers using industry-standard encryption</li>
+                <li>Data is retained only for the duration of your active account</li>
+                <li>You can request immediate deletion of your face data at any time</li>
+                <li>Data is automatically deleted after 30 days of account inactivity</li>
+              </ul>
+
+              <h4 className="text-xl font-medium mb-2">Third-Party Sharing</h4>
+              <ul className="list-disc pl-6 mb-4 text-gray-700">
+                <li>Face data is never shared with third parties for marketing purposes</li>
+                <li>We may use trusted cloud service providers for secure data storage</li>
+                <li>Any third-party access is strictly limited and bound by confidentiality agreements</li>
+                <li>We do not sell or monetize face data in any way</li>
+              </ul>
+
+              <p className="text-gray-700 mb-4">
+                You have complete control over your face data. You can:
+              </p>
+              <ul className="list-disc pl-6 mb-4 text-gray-700">
+                <li>Opt-out of face data collection at any time</li>
+                <li>Request immediate deletion of your face data</li>
+                <li>Access and download your face data</li>
+                <li>Modify or update your face data preferences</li>
               </ul>
             </section>
 
