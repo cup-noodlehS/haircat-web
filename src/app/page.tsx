@@ -1,7 +1,20 @@
+"use client"
+
 import Image from "next/image";
-import { Smartphone, Sparkles, Scissors, Mail } from "lucide-react";
+import { Smartphone, Sparkles, Scissors, Mail, Users, User } from "lucide-react";
 
 export default function Home() {
+  const links = {
+    customer: {
+      ios: "https://testflight.apple.com/join/EQ23AHsB",
+      android: "https://drive.google.com/file/d/1gz12bFtTB8jxP3J_-LRnj1TlKHHfUcnW/view?usp=sharing"
+    },
+    stylist: {
+      ios: "https://testflight.apple.com/join/ZABwUS1A",
+      android: "https://drive.google.com/file/d/1aM60huOxO9J9L-3KmxLpbLaLwSTp33rT/view?usp=drive_link"
+    }
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 flex items-center justify-center p-4">
       <div className="max-w-4xl mx-auto text-center space-y-12">
@@ -34,43 +47,103 @@ export default function Home() {
           </p>
         </div>
 
-        {/* App Store Button */}
-        <div className="flex flex-wrap justify-center gap-6 mt-8">
-          <a 
-            href="https://testflight.apple.com/join/EQ23AHsB" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="transform hover:scale-105 transition-transform duration-200"
-          >
-            <Image
-              src="/images/appstore.webp"
-              alt="Available on the App Store"
-              width={250}
-              height={80}
-              className="cursor-pointer select-none"
-              priority
-            />
-          </a>
-          <a 
-            href="https://bg-app-images.s3.us-east-1.amazonaws.com/app-images/feedback/haircat.apk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transform hover:scale-105 transition-transform duration-200"
-          >
-            <div className="bg-black rounded-md px-6 py-2 flex items-center gap-3 shadow-lg border-2 border-gray-800">
-              <Image
-                src="/images/android-logo.png"
-                alt="Android Logo"
-                width={40}
-                height={40}
-                className="select-none"
-              />
-              <div className="text-left">
-                <div className="text-xs text-gray-400">GET IT ON</div>
-                <div className="text-white text-4xl">Android</div>
+        {/* Download Sections */}
+        <div className="grid md:grid-cols-2 gap-8 mt-12">
+          {/* Customer Section */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border-2 border-gray-100">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="bg-[#FEBF00]/10 p-3 rounded-full">
+                <Users className="w-8 h-8 text-[#FEBF00]" />
               </div>
+              <h2 className="text-2xl font-bold text-gray-900">For Customers</h2>
             </div>
-          </a>
+            <p className="text-gray-600 mb-6">Book appointments with top stylists and get AI-powered style recommendations</p>
+            <div className="flex flex-col gap-4">
+              <a 
+                href={links.customer.ios}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transform hover:scale-105 transition-transform duration-200"
+              >
+                <Image
+                  src="/images/appstore.webp"
+                  alt="Available on the App Store"
+                  width={250}
+                  height={80}
+                  className="cursor-pointer select-none mx-auto"
+                  priority
+                />
+              </a>
+              <a 
+                href={links.customer.android}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-105 transition-transform duration-200"
+              >
+                <div className="bg-black rounded-md px-6 py-2 flex items-center gap-3 shadow-lg border-2 border-gray-800 max-w-[250px] mx-auto">
+                  <Image
+                    src="/images/android-logo.png"
+                    alt="Android Logo"
+                    width={40}
+                    height={40}
+                    className="select-none"
+                  />
+                  <div className="text-left">
+                    <div className="text-xs text-gray-400">GET IT ON</div>
+                    <div className="text-white text-4xl">Android</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          {/* Stylist Section */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border-2 border-gray-100">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="bg-[#FEBF00]/10 p-3 rounded-full">
+                <User className="w-8 h-8 text-[#FEBF00]" />
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900">For Stylists</h2>
+            </div>
+            <p className="text-gray-600 mb-6">Manage your appointments, showcase your work, and grow your client base</p>
+            <div className="flex flex-col gap-4">
+              <a 
+                href={links.stylist.ios}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transform hover:scale-105 transition-transform duration-200"
+              >
+                <Image
+                  src="/images/appstore.webp"
+                  alt="Available on the App Store"
+                  width={250}
+                  height={80}
+                  className="cursor-pointer select-none mx-auto"
+                  priority
+                />
+              </a>
+              <a 
+                href={links.stylist.android}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform hover:scale-105 transition-transform duration-200"
+              >
+                <div className="bg-black rounded-md px-6 py-2 flex items-center gap-3 shadow-lg border-2 border-gray-800 max-w-[250px] mx-auto">
+                  <Image
+                    src="/images/android-logo.png"
+                    alt="Android Logo"
+                    width={40}
+                    height={40}
+                    className="select-none"
+                  />
+                  <div className="text-left">
+                    <div className="text-xs text-gray-400">GET IT ON</div>
+                    <div className="text-white text-4xl">Android</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Features Preview */}
